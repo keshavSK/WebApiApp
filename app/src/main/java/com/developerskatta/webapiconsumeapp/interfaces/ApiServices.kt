@@ -10,5 +10,6 @@ interface ApiServices {
     @GET("api/get_categories")
     fun getCategories(@Query("user_id") userId: String): Call<CategoryResponse>
 
-
+    @GET("api/get_products")
+    fun getProducts(@Query("user_id") userId: String): Call<CategoryResponse>
 }
