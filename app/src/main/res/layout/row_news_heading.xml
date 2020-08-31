@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgNewsThumbnail"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_launcher">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_row_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_toRightOf="@+id/imgNewsThumbnail"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Redmi 9 to Go on Sale in India Today for the First Time at 12 Noon via Amazon, Mi.com: Price, Specificati... - Gadgets 360"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_row_news_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_row_news_title"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgNewsThumbnail"
+        android:text="NDTV News"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_row_news_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_row_news_source"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgNewsThumbnail"
+        android:text="2020-08-31T02:17:11Z"
+        android:textStyle="normal">
+
+    </TextView>
+</RelativeLayout>
